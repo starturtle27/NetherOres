@@ -6,7 +6,7 @@
         "logoFile": "",
         "updateUrl": "",
         "credits": "http://minecraft.curseforge.com/mc-mods/netherores/",
-        "version": "${version}",
+        "version": "${modVersion}",
         "modid": "NetherOres",
         "authorList": [
             "PowerCrystals",
@@ -14,7 +14,7 @@
             "AtomicStryker",
             "skyboy026"
         ],
-        "mcversion": "${mcversion}",
+        "mcversion": "${minecraftVersion}",
         "screenshots": [],
         "dependencies": [],
         "description": "Introduces mineable yet dangerous ores to the Nether"

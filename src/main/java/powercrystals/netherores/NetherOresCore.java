@@ -4,18 +4,16 @@ import static net.minecraftforge.common.config.Configuration.CATEGORY_GENERAL;
 import static powercrystals.netherores.NetherOresCore.dependencies;
 import static powercrystals.netherores.NetherOresCore.modId;
 import static powercrystals.netherores.NetherOresCore.modName;
-import static powercrystals.netherores.NetherOresCore.version;
+import static powercrystals.netherores.NetherOresCore.modVersion;
 
 import java.io.File;
 import java.util.List;
 import java.util.Map;
 
 import cofh.CoFHCore;
-import cofh.core.CoFHProps;
 import cofh.core.world.WorldHandler;
 import cofh.lib.util.RegistryUtils;
 import cofh.mod.BaseMod;
-import cofh.mod.updater.UpdateManager;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.CustomProperty;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -52,13 +50,13 @@ import powercrystals.netherores.world.BlockHellfish;
 import powercrystals.netherores.world.NetherOresWorldGenHandler;
 //this import brought to you by the department of redundancies department, the department that brought you this import
 
-@Mod(modid = modId, name = modName, version = version, dependencies = dependencies,
+@Mod(modid = modId, name = modName, version = modVersion, dependencies = dependencies,
 customProperties = @CustomProperty(k = "cofhversion", v = "true"))
 public class NetherOresCore extends BaseMod
 {
 	public static final String modId = "NetherOres";
 	public static final String modName = "Nether Ores";
-	public static final String version = "@VERSION@";
+	public static final String modVersion = "@VERSION@";
 	public static final String dependencies = CoFHCore.version_group;
 
 	public static final String mobTextureFolder = "netherores:textures/mob/";
@@ -401,6 +399,6 @@ public class NetherOresCore extends BaseMod
 	@Override
 	public String getModVersion()
 	{
-		return version;
+		return modVersion;
 	}
 }
